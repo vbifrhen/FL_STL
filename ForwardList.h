@@ -22,7 +22,7 @@ public:
     }
 
     void popFront() {
-        if (head) {
+        if (!empty()) {
             head = std::move(head->next);
         }
     }
