@@ -32,6 +32,8 @@ public:
     }
 
     const T& front() const {
-        return head->value;
+        if (!empty()) {
+            return head->value;
+        }
     }
 };
